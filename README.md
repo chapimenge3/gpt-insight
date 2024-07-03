@@ -15,6 +15,13 @@ This project is a Go-based HTTP proxy server that routes requests to the OpenAI 
 - Docker Compose
 - Go (for building the application locally)
 
+
+## Preview from grafana
+
+![grafana](./sample-image-2.png)
+
+![grafana](./sample-image.png)
+
 ## Getting Started
 
 ### Clone the Repository
@@ -22,8 +29,6 @@ This project is a Go-based HTTP proxy server that routes requests to the OpenAI 
 ```bash 
 git clone https://github.com/yourusername/go-openai-proxy.git cd go-openai-proxy 
 ```
-
-
 
 ### Build and Run the Application
 
@@ -76,6 +81,7 @@ This request will be proxied to the OpenAI API, and metrics will be collected re
    - Create a new dashboard, add panels, and use the Prometheus data source with queries like:
      - `rate(http_request_duration_seconds_sum[1m])`
      - `rate(http_requests_total[1m])`
+
 
 ### Observability Example
 
